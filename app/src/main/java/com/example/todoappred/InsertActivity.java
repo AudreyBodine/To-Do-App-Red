@@ -9,9 +9,15 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class InsertActivity extends AppCompatActivity {
 
     private DatabaseManager dbManager;
+    Date deadline;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,7 +26,7 @@ public class InsertActivity extends AppCompatActivity {
         setContentView(R.layout.activity_insert);
     }
 
-    public void insert(View view) {
+    public void insert(View view) throws ParseException {
         // Retrieve to-do list item
         Log.w("InsertActivity", "Insert Button Pushed");
         EditText itemET = findViewById(R.id.list_itemET);
@@ -29,6 +35,8 @@ public class InsertActivity extends AppCompatActivity {
         String deadline = deadlineET.getText().toString();
 
         // Insert into database
+        //SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+       // deadline = sdf.parse(deadlineString);
         ToDo td = new ToDo(0, item, deadline);
         dbManager.insert(td);
         Toast.makeText(this, "Item Added", Toast.LENGTH_SHORT).show();

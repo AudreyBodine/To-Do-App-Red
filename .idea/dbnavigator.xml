@@ -28,7 +28,7 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="c34c4542-feb7-4bb4-980b-95f7afe5e93e">
+    <connection id="ccf06524-5931-4cb4-a091-012e9813a4af">
       <console name="toDoDB" type="STANDARD" schema="main" session="Main"><![CDATA[select *
 from do]]></console>
     </connection>
@@ -37,7 +37,7 @@ from do]]></console>
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="c34c4542-feb7-4bb4-980b-95f7afe5e93e" />
+    <connection id="ccf06524-5931-4cb4-a091-012e9813a4af" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -68,7 +68,7 @@ from do]]></console>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="c34c4542-feb7-4bb4-980b-95f7afe5e93e" active="true" signed="true">
+      <connection id="ccf06524-5931-4cb4-a091-012e9813a4af" active="true" signed="true">
         <database>
           <name value="toDoDB" />
           <description value="" />
@@ -304,7 +304,7 @@ from do]]></console>
         <enable-reference-spellchecking value="false" />
       </general>
       <confirmations>
-        <save-changes value="false" />
+        <save-changes value="true" />
         <revert-changes value="true" />
       </confirmations>
     </code-editor-settings>

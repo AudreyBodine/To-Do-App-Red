@@ -1,6 +1,6 @@
 package com.example.todoappred;
 
-import android.widget.EditText;
+import java.util.Date;
 
 public class ToDo {
 
